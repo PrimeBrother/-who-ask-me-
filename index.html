@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background-color: gray;
+      margin: 0;
+    }
+
+    .sun {
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(75px, orange, yellow);
+      border-radius: 50%;
+
+      /* 盒子阴影
+            参数1 x位移
+            参数2 y位移
+            参数3 模糊放大
+            参数4 阴影颜色
+         */
+      box-shadow: 0px 0px 30px yellow;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      transition: all 1s;
+    }
+
+    body:hover .sun {
+      left: 1000px;
+    }
+
+    p {
+      margin-top: 200px;
+      font-size: 300px;
+      font-weight: 900;
+      text-align: center;
+      color: gray;
+      /*text-shadow: -2px -2px white, 2px 2px black;*/
+      /*text-shadow: 0px 0px white, 0px 0px black;*/
+      transition: all 1s;
+    }
+
+    body:hover p {
+      text-shadow: 2px -2px white, -2px 2px black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class='sun'></div>
+  <p>I♥U</p>
+</body>
+
+</html>
